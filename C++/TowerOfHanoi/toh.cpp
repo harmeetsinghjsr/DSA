@@ -11,17 +11,7 @@ void TowerOfHanoi(int start,int end,char source,char auxillary,char destination)
 }
 
 
-// void toh(int e,char a,char b,char c){
-//     if(e>0){
-//         toh(e-1,a,c,b);
-//         cout<<"from "<<a<<" to "<<c<<endl;
-//         toh(e-1,b,a,c);
-//     }
-// }
 
-// void diskCount(){
-           
-// }
 
 int main()
 {
