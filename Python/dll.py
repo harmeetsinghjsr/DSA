@@ -1,9 +1,10 @@
 class Node:
     def __init__(self, data):
         self.data = data
+        self.prev = None
         self.next = None
 
-class LinkedList:
+class DoublyLinkedList:
     def __init__(self):
         self.head = None
 
@@ -16,22 +17,24 @@ class LinkedList:
             while current.next:
                 current = current.next
             current.next = new_node
+            new_node.prev = current
 
     def display(self):
         current = self.head
         while current:
             print(current.data, end=" ")
             current = current.next
+        print()
 
-# Create an empty linked list
-linked_list = LinkedList()
+# Create a new doubly linked list
+dll = DoublyLinkedList()
 
-# Get user input for the linked list elements
-elements = input("Enter the elements of the linked list (space-separated): ").split()
+# Take user input for the elements of the list
+elements = input("Enter the elements of the list (space-separated): ").split()
 
-# Insert each element into the linked list
+# Insert the elements into the doubly linked list
 for element in elements:
-    linked_list.insert(element)
+    dll.insert(element)
 
-# Display the linked list
-linked_list.display()
+# Display the doubly linked list
+dll.display()
