@@ -1,0 +1,2 @@
+all the Algorithms in java are uploaded in github repository 
+https://github.com/harmeetsinghjsr/CypherSchool-DSA-JAVA
