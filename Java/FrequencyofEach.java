@@ -17,6 +17,5 @@ public class FrequencyofEach {
             if(c>0)
             System.out.println("The frequency of "+j+" is "+c);
         }
-
     }    
 }
